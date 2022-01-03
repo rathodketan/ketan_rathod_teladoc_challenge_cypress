@@ -1,0 +1,120 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 1,
+    "failures": 0,
+    "start": "2022-01-03T00:12:39.328Z",
+    "end": "2022-01-03T00:12:53.602Z",
+    "duration": 14274,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "12834487-e330-47d5-83f8-da9903e78a27",
+      "title": "",
+      "fullFile": "cypress/integration/AddDeleteUser.feature",
+      "file": "cypress/integration/AddDeleteUser.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e1998450-d604-4591-8b7b-f6acbded5747",
+          "title": "(UI) Add and Delete User from the web tables",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add a user and validate the user has been added to the table (example #1)",
+              "fullTitle": "(UI) Add and Delete User from the web tables Add a user and validate the user has been added to the table (example #1)",
+              "timedOut": null,
+              "duration": 10733,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "96ad028a-d6ca-4ce9-b3a9-5cf70e113190",
+              "parentUUID": "e1998450-d604-4591-8b7b-f6acbded5747",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete user User Name and validate user has been delete",
+              "fullTitle": "(UI) Add and Delete User from the web tables Delete user User Name and validate user has been delete",
+              "timedOut": null,
+              "duration": 33,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// register this scenario with the cucumber data collector\n// but don't run it\n// Tell mocha this is a skipped test so it also shows correctly in Cypress\nconst state = window.testState;\ncy.then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => state.onFinishScenario(scenario))\n  // eslint-disable-next-line func-names\n  .then(function () {\n    return this.skip();\n  });",
+              "err": {},
+              "uuid": "6c6f86ff-b17d-4e48-9ee9-e5f09a70289b",
+              "parentUUID": "e1998450-d604-4591-8b7b-f6acbded5747",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "96ad028a-d6ca-4ce9-b3a9-5cf70e113190"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "6c6f86ff-b17d-4e48-9ee9-e5f09a70289b"
+          ],
+          "duration": 10766,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
